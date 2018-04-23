@@ -9,12 +9,12 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "build-storybook": "build-storybook -s public",
     "eject": "react-scripts eject",
+    "start": "react-scripts start",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "test": "react-scripts test --env=jsdom"
   },
   "devDependencies": {
     "@storybook/react": "^3.4.2",
