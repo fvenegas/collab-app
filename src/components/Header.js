@@ -4,8 +4,12 @@ import logo from '../logo.svg';
 import './Header.css';
 
 class Header extends Component {
+  static defaultProps = {
+    title: 'Welcome to React baby!'
+  }
+
   static propTypes = {
-    title: PropTypes.string.isRequired
+    title: PropTypes.string
   }
 
   render() {
