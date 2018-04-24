@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import Dialog from '../components/Dialog';
 import Header from '../components/Header';
 import '../index.css';
 import '../components/App.css';
@@ -15,3 +16,15 @@ storiesOf('Header', module)
       <Header />
     </div>
   ));
+
+storiesOf('Dialog', module)
+  .add('open', () => (
+    <Dialog isOpen>
+      Foo
+    </Dialog>
+  ))
+  .add('closed', () => (
+    <Dialog>
+      Foo
+    </Dialog>
+  ))
