@@ -6,12 +6,12 @@ import '../components/App.css';
 
 storiesOf('Header', module)
   .add('with title', () => (
-    <div className="App">
+    <div className="app">
       <Header title="I set the title" />
     </div>
   ))
   .add('without title', () => (
-    <div className="App">
+    <div className="app">
       <Header />
     </div>
   ));
